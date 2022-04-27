@@ -1,0 +1,460 @@
+/*
+ * Globals
+ */
+
+ :root {
+    --main-text-color: rgb(255, 255, 255);
+    --secondary-color: rgba(0, 0, 0, 0.80);
+    --bar_grdEnd: #40c0ff;
+    --bar_grdStart: rgb(0 0 0 / 0%)
+}
+
+@font-face {
+    font-family: 'MBF Moonlander';
+    src: url('https://plainfacemillionaireclubnft.art/dashboard/stylesheets/MBFMoonlander.woff2') format('woff2'), url('https://plainfacemillionaireclubnft.art/dashboard/stylesheets/MBFMoonlander.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body>div {
+    padding: 0px !important;
+}
+
+.plainFaceFont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.plainFaceFont1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.outline1 {
+    color: #40c0ff;
+}
+
+.pfmcYellow {
+    color: #ffb401;
+}
+
+.newFont {
+    font-family: 'MBF Moonlander';
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.secondaryImage {
+    max-width: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    display: block;
+    text-align: center;
+    z-index: -1;
+}
+
+.secondaryImage img {
+    width: 100%;
+}
+
+.walletBox .walletAddress {
+    background-color: #40c0ff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.tertiaryImage img {
+    width: 300px;
+}
+
+/* Custom default button */
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritance from `body` */
+}
+
+/*
+ * Base structure
+ */
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.bg-custom {
+    /* background-color: #FFF; */
+    background: url("../images/bkg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.logo {
+    margin-bottom: 5px !important;
+}
+
+.logo img {
+    max-width: 75px;
+}
+
+.social-links a {
+    font-size: 2em;
+    color: var(--main-text-color);
+    margin: 10px 10px;
+    border: 5px solid #fff;
+    background: rgb(0 0 0 / 90%);
+    padding: 25px 0;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+.social-links a img {
+    width: 15%;
+}
+
+.btn-rounded {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: transparent;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    overflow: hidden;
+    border: 5px solid var(--main-text-color);
+    text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
+    text-decoration: none;
+}
+
+.btn-rounded:hover {
+    text-decoration: none;
+    color: var(--main-text-color);
+    border: 5px solid #40c0ff;
+}
+
+.btn-rounded.full {
+    /*background-color:var(--main-text-color);*/
+    background: linear-gradient(90deg, #a60000, #002381 50%, #00ff81);
+    transition: all .3s ease-in-out;
+    color: #000;
+    margin-top: 0px !important;
+}
+
+.btn-rounded.full:hover {
+    color: #FFF;
+}
+
+.minter {
+    border: 5px solid #fff;
+    background: rgb(0 0 0 / 90%);
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.minter h4,
+.minter h1 {
+    font-weight: 800;
+}
+
+.socialSign {
+    color: var(--primary-color);
+}
+
+.font {
+    font-family: Montserrat, sans-serif;
+}
+
+.minter .lead.first {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.minter h1 {
+    color: var(--main-text-color);
+    ;
+}
+
+.minter h1 span.outline,
+.minter h4 .outline {
+    color: #40c0ff;
+}
+
+.minter .nftSelector .amountSelector {
+    color: #FFF;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.minter .nftSelector .count {
+    color: var(--main-text-color);
+    ;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.color {
+    color: var(--main-text-color);
+    ;
+}
+
+.minter .basket {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.lead.basket .priceHeading {
+    font-size: 25px;
+}
+
+.minter .cta .connect,
+.minter .cta .mint {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+}
+
+.walletAddress {
+    color: var(--secondary-color);
+    ;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+    font-style: italic;
+}
+
+#mintingModal {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#mintingModal .modal-content {
+    background-color: #000;
+    border: 5px solid var(--main-text-color);
+}
+
+#mintingModal .modal-content .info {
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+.mmLink {
+    text-decoration: none;
+}
+
+.footerImagesInvert {
+    filter: invert(1);
+}
+
+.socialSign.btn {
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.supporters {
+    margin: 10px 10px;
+}
+
+.inner-wrapper {
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* position: absolute; */
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-horizontal-alt 40s linear infinite;
+}
+
+.wrapper-marquee {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #ebff00;
+    background-image: url("https://uploads-ssl.webflow.com/61d6f4fdf4ef716e1125f693/61dd45d43d2f9f125eb1c891_rectangleOne.svg"), url("https://uploads-ssl.webflow.com/61d6f4fdf4ef716e1125f693/61dd45d43d2f9f125eb1c891_rectangleOne.svg");
+    background-position: 50% 0, 50% 100%;
+    background-size: auto 1vh, auto 1vh;
+    background-repeat: repeat-x, repeat-x;
+    background-attachment: scroll, scroll
+}
+
+.logo-black {
+    height: 3vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.marquee-heading {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #010204;
+    font-size: 2vh;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.reverse {
+    animation: marquee-horizontal-reverse-alt 40s linear infinite;
+}
+
+
+
+
+
+#progressBar {
+    height: 2rem;
+    margin-top: 1.5rem;
+    position: relative;
+    width: 100%;
+   
+    background: rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+
+
+.progress-bar-value {
+ 
+    position: absolute;
+    z-index: 200;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+  
+}
+
+
+
+#progressBarFull {
+    height: 3.4rem;
+    width: 0%;
+    font-weight: bolder;
+    color: #333;
+    height: 100%;
+    background: linear-gradient(to left, var(--bar_grdEnd), var(--bar_grdStart));
+    border-radius: 20px;
+    display: grid;
+    text-align: right;
+    box-shadow: 0 0 3px -5px #1e7054, 0 3px 150px #033222;
+    transition: width .5s ease;
+    z-index: 100;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes marquee-horizontal-alt {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes marquee-horizontal-reverse-alt {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
